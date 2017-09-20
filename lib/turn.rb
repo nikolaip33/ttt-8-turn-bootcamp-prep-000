@@ -23,12 +23,12 @@ def move(board, index, token = "X")
 end
 
 def input_to_index(input)
-  input-1
+  input.to_i-1
 end
 
 def turn(board)
   puts "Please enter 1-9:"
-  input = input_to_index((gets.strip).to_i)
+  input = input_to_index(gets.strip)
   loop do
     if valid_move?(board, input)
       move(board, input)
