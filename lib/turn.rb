@@ -18,7 +18,7 @@ def position_taken?(board, index)
 end
 
 def move(board, index, token = "X")
-  board[index] = "X"
+  board[index] = "token"
   display_board(board)
 end
 
